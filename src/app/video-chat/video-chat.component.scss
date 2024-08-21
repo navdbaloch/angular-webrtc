@@ -1,0 +1,20 @@
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}

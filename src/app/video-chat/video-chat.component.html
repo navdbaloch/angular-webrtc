@@ -1,0 +1,13 @@
+<div class="video-container">
+    <video #localVideo autoplay></video>
+    <div class="overlay">
+      <span>You</span>
+    </div>
+  </div>
+  <div class="video-container">
+    <video #remoteVideo autoplay></video>
+    <div class="overlay">
+      <span>You the Caller :) </span>
+    </div>
+  </div>
+  <button (click)="startCall()">Start Call</button>
