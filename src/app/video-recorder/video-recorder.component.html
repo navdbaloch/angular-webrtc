@@ -1,0 +1,21 @@
+<div class="video-recorder-container">
+    <div class="video-container">
+      <video #video width="400" height="300" autoplay muted *ngIf="isRecording"></video>
+      <video #videoPlayer width="400" height="300" controls ></video>
+    </div>
+    
+    <div class="timer" *ngIf="isRecording">{{ minutes }}:{{ seconds | number: '2.0' }}</div>
+  
+    <div class="button-container">
+      <button class="btn btn-primary" (click)="startRecording()" *ngIf="!isRecording">
+        <i class="fas fa-circle"></i> Start Recording
+      </button>
+      <button class="btn btn-danger" (click)="stopRecording()" *ngIf="isRecording">
+        <i class="fas fa-square"></i> Stop Recording
+      </button>
+      <button class="btn btn-success" (click)="download()" *ngIf="!isRecording && recordedBlob">
+        <i class="fas fa-download"></i> Download Video
+      </button>
+    </div>
+  </div>
+  

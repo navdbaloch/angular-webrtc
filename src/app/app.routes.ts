@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { VideoChatComponent } from './video-chat/video-chat.component';
+import { VideoRecorderComponent } from './video-recorder/video-recorder.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: VideoChatComponent
+        component: VideoRecorderComponent
     }
 ];
